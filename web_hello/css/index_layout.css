@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: "微軟正黑體", Helvetica, "Microsoft JhengHei", Arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    background: #000;
+    /*overflow-x:hidden;*/
+}
+
+.noScrollBar {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*--共用--*/
+
+a,
+#footer_wrapper a,
+h1,
+h1 span,
+.menu,
+.menu a {
+    display: block;
+}
+
+.menu a {
+    width: 100%;
+    height: 100%;
+}
+
+ul,
+ol,
+ul li,
+ol li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 span {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+
+/*----*/
+
+body.index {
+    background: #000 url(../img/index_Bg_01.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+#out_wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+#inner_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+
+/*--content_wrapper--*/
+
+#content_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.content_wrapper {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    z-index: 1000;
+    margin-top: 0;
+    margin-left: -390px;
+    width: 780px;
+    height: 220px;
+    background: url(../img/index_logo.png) center top no-repeat;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    width: 244px;
+    height: 97px;
+    z-index: 100;
+    transition: background-color 1s;
+}
+
+.menu.mleft {
+    left: 0;
+    background: url(../img/menu.png) 0px 0px no-repeat;
+    background-color: rgba(138, 99, 69, 0);
+}
+
+.menu.mleft:hover {
+    left: 0;
+    background: url(../img/menu.png) 0px -97px no-repeat;
+    background-color: rgba(138, 99, 69, 0.4);
+}
+
+.menu.mright {
+    right: 0;
+    background: url(../img/menu.png) 0px -194px no-repeat;
+    background-color: rgba(138, 99, 69, 0);
+}
+
+.menu.mright:hover {
+    right: 0;
+    background: url(../img/menu.png) 0px -291px no-repeat;
+    background-color: rgba(138, 99, 69, 0.4);
+}
+
+.coverBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transition: background 0.2s;
+}
+
+.mhover {
+    background: rgba(0, 0, 0, 0.6);
+    transition: background 0.2s;
+    backdrop-filter: grayscale(80%);
+    backdrop-filter: blur(3px);
+}
+
+
+/*--content_wrapper END--*/
+
+
+/*--footer_wrapper--*/
+
+#footer_wrapper {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    background: #000 url(../img/footer_line.jpg) center top no-repeat;
+}
+
+.footer_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_wrapper ul,
+.footer_wrapper ul li {
+    float: left;
+}
+
+.footer_wrapper ul li span.follow {
+    margin-top: 15px;
+}
+
+.footer_wrapper ul li span.follow,
+.copyright {
+    color: #725e34;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.footer_wrapper ul li.icon {
+    margin-left: 21px;
+}
+
+.footer_wrapper ul li.icon a {
+    transition: background-position 0.2s;
+}
+
+.fb {
+    background: url(../img/fb.png) 0 0 no-repeat;
+    width: 9px;
+    height: 17px;
+    margin-top: 11px;
+}
+
+.fb:hover {
+    background-position: 0 -17px;
+}
+
+.weibo {
+    background: url(../img/weibo.png) 0 0 no-repeat;
+    width: 22px;
+    height: 21px;
+    margin-top: 8px;
+    transition: background-position 0.2s;
+}
+
+.weibo:hover {
+    background-position: 0 -21px;
+}
+
+.obon {
+    background: url(../img/obon.png) 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+}
+
+.obon:hover {
+    background-position: 0 -20px;
+}
+
+.camera {
+    background: url(../img/camera.png) 0 0 no-repeat;
+    width: 17px;
+    height: 18px;
+    margin-top: 9px;
+    transition: background-position 0.2s;
+}
+
+.camera:hover {
+    background-position: 0 -18px;
+}
+
+.copyright {
+    float: right;
+}
+
+
+/*--footer_wrapper END--*/
+
+
+/*----*/

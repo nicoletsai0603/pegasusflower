@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>帕格修斯花藝訂製首頁</title>
+    <meta name="Author" content="Designer Name - OBiz Inc. 歐比斯設計整合行銷">
+    <meta name="Description" content="帕格修斯花藝訂製於 2008 年成立後，不斷追求創新， 堅持作品質感，提供顧客精緻及專業的客製化服務。">
+    <meta name="Keywords" content="帕格修斯,帕格修斯花藝訂製官網, Pegasus de Flower,Pegasus,花店,花藝設計,婚禮佈置,會場設計,頂級婚禮">
+    <meta name="keywords" content="帕格修斯,帕格修斯花藝訂製官網, Pegasus de Flower,Pegasus,花店,花藝設計,婚禮佈置,會場設計,頂級婚禮">
+    <meta name="publisher" content="帕格修斯,帕格修斯花藝訂製官網, Pegasus de Flower,Pegasus,花店,花藝設計,婚禮佈置,會場設計,頂級婚禮">
+    <meta name="company" content="帕格修斯,帕格修斯花藝訂製官網, Pegasus de Flower,Pegasus,花店,花藝設計,婚禮佈置,會場設計,頂級婚禮">
+    <meta name="page-topic" content="帕格修斯,帕格修斯花藝訂製官網, Pegasus de Flower,Pegasus,花店,花藝設計,婚禮佈置,會場設計,頂級婚禮">
+    <meta name="distribution" content="Taiwan">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 days">
+    <meta name="rating" content="general">
+
+
+    <link href="web_hello/css/index_layout.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="web_hello/js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body class="index">
+    <div id="out_wrapper">
+        <div id="inner_wrapper">
+            <div id="content_wrapper">
+                <h1><span>帕格修斯花藝訂製</span></h1>
+                <div class="content_wrapper">
+                    <article class="menu mleft">
+                        <a class="" href="http://shop-pegasusflower.show.bis.tw/index.asp" target="_blank"></a>
+                    </article>
+                    <article class="menu mright">
+                        <a class="" href="http://pegasusflower.show.bis.tw/index.asp" target="_blank"></a>
+                    </article>
+                    <!-- <article class="menu mleft"><a class="" href="#" onclick="javascript:alert('「網站即將上線，敬請期待」')"></a></article>					
+                	<article class="menu mright"><a class="" href="#" onclick="javascript:alert('「網站即將上線，敬請期待」')"></a></article>-->
+                </div>
+
+
+                <section class="coverBg"></section>
+            </div>
+            <div id="footer_wrapper">
+                <div class="footer_wrapper">
+                    <ul>
+                        <li>
+                            <span class="follow">FOLLOW PEGASUS</span>
+                        </li>
+                        <li class="icon">
+                            <a class="fb" href="https://www.facebook.com/pegasus.de.flower/?fref=ts" target="_blank"></a>
+                        </li>
+                        <li class="icon">
+                            <a class="weibo" href="#" target="_blank"></a>
+                        </li>
+                        <li class="icon">
+                            <a class="obon" href="#" target="_blank"></a>
+                        </li>
+                        <li class="icon">
+                            <a class="camera" href="#" target="_blank"></a>
+                        </li>
+                    </ul>
+
+                    <span class="copyright">
+                        PEGASUS DE FLOWER ©2016. ALL RIGHTS RESERVED.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            var i = $(document).height();
+            $('body').css("height", i);
+            $('#content_wrapper').css("height", i);
+            $('.content_wrapper').css("height", i);
+            $('.coverBg').css("height", i);
+            $('.mhover').css("height", i);
+
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $(".menu.mleft,.menu.mright")
+                .mouseover(function() {
+                    $('.coverBg').addClass('mhover');
+
+                })
+                .focusin(function() {
+                    $('.coverBg').addClass('mhover');
+
+                })
+                .focusout(function() {
+                    $('.coverBg').removeClass('mhover');
+                })
+                .mouseout(function() {
+                    $('.coverBg').removeClass('mhover');
+                })
+        })
+    </script>
+
+</body>
+
+</html>

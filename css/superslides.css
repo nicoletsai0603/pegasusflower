@@ -1,0 +1,83 @@
+
+/*自訂寬高*/
+.wide-container {
+      max-width: 750px;
+	  height:470px;
+      margin: 0 auto;
+	  
+    }
+/*END 自訂寬高*/
+
+
+
+
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation a.prev {
+  left:-15%;
+}
+.slides-navigation a.next {
+  right:-15%;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom:-10%;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  
+  width: 20px;
+  height: 20px;
+  border-radius:20px;
+  /*background:url(../img/icon-cercle.png) no-repeat center 0;*/
+  border:1px solid #d4a65b;
+  font-size:0;
+  margin:0 7px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+ /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;*/
+ /* overflow: hidden;*/
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  /*background:url(../img/icon-cercle.png) no-repeat center -20px;*/
+  background:#805b27;
+}
